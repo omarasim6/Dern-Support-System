@@ -1,0 +1,84 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.input {
+    @apply w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus: ring-2 focus:ring-blue-500 outline-none;
+}
+
+.btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover: bg-blue-700;
+}
+
+.admin-layout,
+.customer-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-main,
+.customer-main {
+    flex: 1;
+    padding: 24px;
+    background: #f5f6fa;
+}
+
+/* Sidebar */
+.admin-sidebar {
+    width: 240px;
+    background: #111827;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar-nav a {
+    display: block;
+    color: white;
+    margin-top: 12px;
+    text-decoration: none;
+}
+
+.sidebar-nav a.active {
+    font-weight: bold;
+}
+
+.logout-btn {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
